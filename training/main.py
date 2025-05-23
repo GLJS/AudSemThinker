@@ -31,7 +31,7 @@ parser = argparse.ArgumentParser(
     description="Train Qwen2-Audio-7B-Instruct for audio captioning using SFTTrainer."
 )
 # Common arguments
-parser.add_argument("--shard_folder", nargs="+", default="/gpfs/scratch1/shared/gwijngaard/training_data/training_qwen2.5_semantic_qa/", 
+parser.add_argument("--shard_folder", nargs="+", default="./training_data/training_qwen2.5_semantic_qa/", 
                     help="Folder containing 'train' (and optionally 'valid') subfolders with shards for training")
 parser.add_argument("--train_batch_size", type=int, default=16, help="Batch size")
 parser.add_argument("--epochs", type=int, default=5, help="Number of epochs")

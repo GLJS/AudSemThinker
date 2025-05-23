@@ -158,7 +158,7 @@ def main():
     global processor  # ensure collate_fn sees the processor instance
     global assistant_token_id
     parser = argparse.ArgumentParser(description="Train Qwen2.5-Omni for audio QA using SFTTrainer")
-    parser.add_argument("--shard_folder", nargs='+', default=["/gpfs/scratch1/shared/gwijngaard/training_data/training_qwen2.5_semantic_mc_qa/"], help="Folders with train/valid shards")
+    parser.add_argument("--shard_folder", nargs='+', default=["./training_data/training_qwen2.5_semantic_mc_qa/"], help="Folders with train/valid shards")
     parser.add_argument("--train_batch_size", type=int, default=4)
     parser.add_argument("--epochs", type=int, default=1)
     parser.add_argument("--lr", type=float, default=2e-4)
