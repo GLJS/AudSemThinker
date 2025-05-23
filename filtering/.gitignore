@@ -1,0 +1,13 @@
+out.txt
+sub3_*
+env
+.vscode
+*.jsonl
+*.txt
+*.json
+*.csv 
+videos
+video
+wandb
+results
+
