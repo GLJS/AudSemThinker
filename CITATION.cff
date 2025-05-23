@@ -1,0 +1,35 @@
+
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "AudSemThinker: Enhancing Audio-Language Models through Reasoning over Semantics of Sound"
+authors:
+  - family-names: "Wijngaard"
+    given-names: "Gijs"
+  - family-names: "Formisano"
+    given-names: "Elia"
+  - family-names: "Esposito"
+    given-names: "Michele"
+  - family-names: "Dumontier"
+    given-names: "Michel"
+date-released: 2025-01-01
+url: "https://github.com/GLJS/AudSemThinker"
+preferred-citation:
+  type: article
+  title: "AudSemThinker: Enhancing Audio-Language Models through Reasoning over Semantics of Sound"
+  authors:
+    - family-names: "Wijngaard"
+      given-names: "Gijs"
+    - family-names: "Formisano"
+      given-names: "Elia"
+    - family-names: "Esposito"
+      given-names: "Michele"
+    - family-names: "Dumontier"
+      given-names: "Michel"
+  year: 2025
+  url: "https://arxiv.org/abs/2505.14142"
+  repository: "arXiv"
+  identifiers:
+    - type: other
+      value: "arXiv:2505.14142"
+      description: "arXiv preprint"

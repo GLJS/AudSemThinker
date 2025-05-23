@@ -6,6 +6,7 @@ Official repository for the AudSemThinker model and AudSem dataset. This reposit
 
 | Category | Link                                                                  | Description                                      |
 |----------|-----------------------------------------------------------------------|--------------------------------------------------|
+| Paper    | [arXiv:2505.14142](https://arxiv.org/abs/2505.14142)                  | AudSemThinker research paper                     |
 | Datasets | [gijs/audsem-simple](https://huggingface.co/datasets/gijs/audsem-simple) | Simplified AudSem dataset without semantic descriptors |
 |          | [gijs/audsem](https://huggingface.co/datasets/gijs/audsem)             | Full AudSem dataset with semantic descriptors    |
 | Models   | [gijs/audsemthinker-qa](https://huggingface.co/gijs/audsemthinker-qa)       | AudSemThinker model fine-tuned for QA        |
@@ -167,4 +168,16 @@ CUDA_VISIBLE_DEVICES=0 python -m vllm.entrypoints.openai.api_server --model casp
 python src/main_evaluate.py --dataset_name <dataset_subset> --model_name audsemthinker --batch_size 8 --metrics llama3_70b_judge --only_generate_predictions
 ```
 
----
+### Citation
+If you use the AudSemThinker model or AudSem dataset in your research, please cite the accompanying paper:
+```
+@misc{wijngaard2025audsemthinkerenhancingaudiolanguagemodels,
+  title={AudSemThinker: Enhancing Audio-Language Models through Reasoning over Semantics of Sound}, 
+  author={Gijs Wijngaard and Elia Formisano and Michele Esposito and Michel Dumontier},
+  year={2025},
+  eprint={2505.14142},
+  archivePrefix={arXiv},
+  primaryClass={cs.SD},
+  url={https://arxiv.org/abs/2505.14142}, 
+}
+```
