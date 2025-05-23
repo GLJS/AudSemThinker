@@ -48,7 +48,7 @@ with open("data/subtitles_youtube_sdh.csv", "w") as file:
 
 
 # Open the .jsonl file
-with open('/data/yt_subtitles/subtitles_english_manual_20232912.txt', 'r') as file:
+with open('./subtitles_english_manual_20232912.txt', 'r') as file:
     json_accumulator = ''
     # 18_641_150 items, 19_329_507 lines
     for line in tqdm(file, total=19_329_507):

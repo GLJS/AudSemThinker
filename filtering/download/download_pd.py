@@ -18,7 +18,7 @@ parser.add_argument('--end', type=int, required=False, default=6,
                     help='an integer for the ending value')
 parser.add_argument('--log_path', type=str, required=False, default='download/',
                     help='Path to the log file')
-parser.add_argument('--video_path', type=str, required=False, default='/data/yt_subtitles/videos/',
+parser.add_argument('--video_path', type=str, required=False, default='./videos/',
                     help='Path to the video file')
 parser.add_argument('--num_processes', type=int, required=False, default=8,
                     help='Number of processes to use')

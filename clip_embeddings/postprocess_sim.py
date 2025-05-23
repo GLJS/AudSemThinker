@@ -139,11 +139,11 @@ def main():
     print(args)
 
     if args.modality == 'audio':
-        reference_dir = Path("/gpfs/work4/0/einf6190/embeddings/audio")
+        reference_dir = Path("./audio")
         generated_dir = Path("./audio_embeddings")
         output_file = f"most_dissimilar_files_audio_{args.threshold:.2f}.pkl"
     else:
-        reference_dir = Path("/gpfs/work4/0/einf6190/embeddings/text") 
+        reference_dir = Path("./embeddings/text") 
         generated_dir = Path("./text_embeddings")
         output_file = f"most_dissimilar_files_text_{args.threshold:.2f}.pkl"
 
