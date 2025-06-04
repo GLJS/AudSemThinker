@@ -227,9 +227,9 @@ def process_and_prepare_sample(sample: dict, processor_instance, sampling_rate: 
         if is_semantic:
             semantic_elements = meta.get("semantic_elements", "").strip()
             # `text` is the target for generation by the model
-            text_to_generate = f"<think>{thinking}</think>\\n<semantic_elements>{semantic_elements}</semantic_elements>\\n<answer>{raw_answer}</answer>"
+            text_to_generate = f"<think>{thinking}</think>\n<semantic_elements>{semantic_elements}</semantic_elements>\n<answer>{raw_answer}</answer>"
         else:
-            text_to_generate = f"<think>{thinking}</think>\\n<answer>{raw_answer}</answer>"
+            text_to_generate = f"<think>{thinking}</think>\n<answer>{raw_answer}</answer>"
 
         # Load the audio from the FLAC binary and resample if needed.
         audio_array = sample["flac"]["array"]

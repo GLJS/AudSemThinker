@@ -206,7 +206,7 @@ def collate_fn(examples):
     labels = inputs.input_ids.clone()
     labels[labels == processor.tokenizer.pad_token_id] = -100
 
-    assistant_token_id = processor.tokenizer.encode("<|im_start|>assistant\\n", return_tensors="pt")[0]
+    assistant_token_id = processor.tokenizer.encode("<|im_start|>assistant\n", return_tensors="pt")[0]
     matches = (labels[:, :-2] == assistant_token_id[0]) & \
             (labels[:, 1:-1] == assistant_token_id[1]) & \
             (labels[:, 2:] == assistant_token_id[2])
